@@ -1,0 +1,133 @@
+.product-details {
+
+    @apply flex lg:flex-row flex-col gap-10;
+
+    figure {
+
+        @apply w-full lg:w-1/2;
+
+        img {
+
+            @apply mx-auto;
+
+        }
+
+    }
+
+    .details {
+
+        @apply lg:w-2/6 mr-auto;
+
+        .name {
+
+            @apply font-medium mb-3;
+
+        }
+
+        .product-id {
+
+            @apply text-sm text-slate-500;
+
+        }
+
+    }
+
+    hr {
+
+        @apply my-6;
+
+    }
+
+    .ratings {
+
+        @apply text-slate-500;
+
+        span {
+
+            @apply text-primary font-semibold;
+
+        }
+
+    }
+
+    .price {
+
+        @apply text-4xl font-semibold;
+
+    }
+
+    .cart-cta {
+
+        @apply flex items-center gap-10 mt-6;
+
+        .qty {
+
+            @apply flex items-center gap-1;
+
+            button {
+
+                @apply h-8 w-8 rounded flex items-center justify-center text-white font-medium;
+
+                &.increment {
+
+                    @apply bg-primary;
+
+                }
+
+                &.decrement {
+
+                    @apply bg-red-500;
+
+                }
+
+            }
+
+            input {
+
+                @apply rounded w-10 px-3 py-2 outline-none;
+
+            }
+
+        }
+
+        .cta {
+
+            @apply py-2.5 px-7 rounded-full bg-primary text-white font-medium;
+
+            &:disabled {
+
+                @apply opacity-70 cursor-not-allowed;
+
+            }
+
+        }
+
+    }
+
+    .stock {
+
+        span {
+
+            @apply inline-block font-semibold text-xl text-red-600;
+
+            &.instock {
+
+                @apply text-green-600;
+
+            }
+
+        }
+
+    }
+
+    .desc {
+
+        h4 {
+
+            @apply mb-2.5;
+
+        }
+
+    }
+
+}

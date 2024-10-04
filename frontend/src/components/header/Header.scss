@@ -1,0 +1,47 @@
+header {
+
+    @apply bg-slate-900 sticky top-0 py-2.5 z-10;
+
+    .container {
+
+        @apply flex items-center justify-between text-white;
+
+        .logo {
+
+            @apply text-4xl font-bold;
+
+        }
+
+        .search {
+
+            @apply items-center hidden lg:flex;
+
+            input {
+
+                @apply w-[450px] py-2 px-5 outline-none rounded-l text-slate-800;
+
+            }
+
+            .search-button {
+
+                @apply h-10 w-10 cursor-pointer flex rounded-r items-center justify-center bg-primary;
+
+            }
+
+        }
+
+        .cart {
+
+            @apply font-medium text-xl flex items-center gap-2 cursor-pointer;
+
+            .count {
+
+                @apply p-1.5 bg-primary rounded text-sm h-6 w-6 flex items-center justify-center;
+
+            }
+
+        }
+
+    }
+
+}

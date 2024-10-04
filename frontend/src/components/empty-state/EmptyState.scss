@@ -1,0 +1,28 @@
+.empty-state {
+
+    @apply flex flex-col items-center max-w-80 text-center m-auto;
+
+    figure {
+
+        @apply h-[100px] mb-5;
+
+        img {
+
+            @apply h-full;
+
+        }
+
+    }
+
+    .title {
+
+        @apply mb-2.5;
+
+    }
+
+    p {
+
+        @apply text-base text-slate-500;
+
+    }
+}

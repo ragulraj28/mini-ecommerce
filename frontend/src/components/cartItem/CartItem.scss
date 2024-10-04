@@ -1,0 +1,65 @@
+.cartitem-card {
+
+    @apply flex lg:flex-row flex-col gap-10 lg:gap-14 py-7 border-t border-t-slate-200 items-center lg:items-start lg:max-w-fit;
+
+    figure {
+
+        @apply h-[200px] lg:w-24 lg:h-20 flex-shrink-0;
+
+        img {
+
+            @apply h-full;
+
+        }
+
+    }
+
+    .name {
+
+        @apply font-medium text-lg text-slate-500 lg:w-44 text-center lg:text-left hover:text-primary hover:cursor-pointer;
+
+    }
+
+    .price {
+
+        @apply font-semibold text-2xl text-primary w-28 text-center;
+
+    }
+
+    .qty {
+
+        @apply flex items-center gap-1 h-fit;
+
+        button {
+
+            @apply h-8 w-8 rounded flex items-center justify-center text-white font-medium;
+
+            &.increment {
+
+                @apply bg-primary;
+
+            }
+
+            &.decrement {
+
+                @apply bg-red-500;
+
+            }
+
+        }
+
+        input {
+
+            @apply rounded w-12 px-3 py-2 outline-none;
+
+        }
+
+    }
+
+    .delete {
+
+        @apply text-red-500 hover:underline cursor-pointer;
+
+    }
+
+}

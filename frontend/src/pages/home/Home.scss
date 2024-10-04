@@ -1,0 +1,17 @@
+.home-page {
+
+    @apply py-10;
+
+    h1 {
+
+        @apply text-center mb-10;
+
+    }
+
+    .product-container {
+
+        @apply grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5;
+        
+    }
+
+}
