@@ -4,7 +4,6 @@ import './Footer.scss';
 const Footer = () => {
 
   const date = new Date().getFullYear();
-  const name = 'Ragulraj'
 
   return (
     <footer>
